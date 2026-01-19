@@ -1,9 +1,8 @@
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public StateMachine stateMachine { get; private set; }
-
+    private StateMachine stateMachine;
     private EntityState idleState;
 
     private void Awake()
@@ -19,7 +18,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
-            stateMachine.currentState.Update();
+        stateMachine.currentState.Update();
     }   
 
 }
