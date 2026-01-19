@@ -19,7 +19,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
-        stateMachine.currentState.Update();
+            stateMachine.currentState.Update();
     }   
 
 }
